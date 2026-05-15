@@ -17,6 +17,11 @@ from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2KeyDerivationFunctio
 from cryptography.hazmat.primitives import hashes
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, CallbackQueryHandler, filters, ContextTypes
+from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
+from cryptography.hazmat.primitives import hashes
+
+# ابحث عن أي مكان في الكود يستخدم PBKDF2 أو PBKDF2KeyDerivationFunction
+# واستبدله بـ PBKDF2HMAC مع التأكد من تمرير المعاملات الصحيحة
 
 # إعدادات
 logging.basicConfig(
